@@ -496,6 +496,12 @@ variable "atlantis_bitbucket_base_url" {
   default     = ""
 }
 
+variable "atlantis_repo_config_json" {
+  description = "Specify server-side repo config as a JSON string"
+  type        = string
+  default     = ""
+}
+
 variable "custom_environment_secrets" {
   description = "List of additional secrets the container will use (list should contain maps with `name` and `valueFrom`)"
   type = list(object(
